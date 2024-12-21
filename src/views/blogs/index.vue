@@ -24,6 +24,10 @@ onMounted(async () => posts.value = await fetchBlogs());
                <h1> <span class="text-bold">{{ post.id }}</span> {{ post.title }} </h1>
                <div v-html="post.body"></div>
 
+                 <div class="ql-snow">
+                    <div class="ql-editor" v-html="product.data.description"></div>
+                </div>
+
                <div class="mt-4">
                     <quill-editor
                         theme="snow"
